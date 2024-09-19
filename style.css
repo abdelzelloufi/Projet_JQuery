@@ -92,13 +92,22 @@ header h1
 .description h3{
     margin-top: 30px;
     padding: 10px;
-    font-size: 26px;
-    background: #d70000;
+    font-size: 24px;
+    background: rgb(1, 17, 78);
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
 
     }
+
+.description p{
+    padding-top: 35px;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+
+}
     
 
 
