@@ -48,26 +48,31 @@ header h1
     height: 500px;
     overflow: hidden;
     position: relative;
-    padding: 2px;
+    
 }
 
 .bw{
     position: absolute;
+    left: 0px;
     width: 216px;
     height: 500px;
     cursor: pointer;
     background: url("images/image_black.jpg.webp") no-repeat;
     background-position: -20px 0px;
     opacity: 0.7;
+    margin: 5px;
+    
     
 }
 .color{
-
+    position: absolute;
+    left: 216px;
     width: 216px;
     height: 500px;
     cursor: pointer;
     background: url("images/image_color.jpg.webp") no-repeat;
     background-position: -20px 0px;
+    margin: 5px;
     
 }
 
@@ -87,10 +92,13 @@ header h1
     background-position: -864px 0px;
 }
 .description{
+    position: absolute;
+    left: 216px;
     width: 240px;
     height: 460px;
     padding: 20px;
     background: #fff;
+    
 }
 .description h2{
     padding-top: 20px;
