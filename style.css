@@ -1,0 +1,46 @@
+*{
+
+        margin: 0;
+        padding: 0;
+}
+
+ul,ol {
+
+    list-style: none;
+
+}
+body{
+    background: url("images/background_image.jpg.avif") no-repeat center center;
+    background-size: cover;
+    background-color: #1b2c1a;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    padding: 30px 0;
+}
+
+header h1
+{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* MAIN-MENU */
+
+#main-menu ul {
+
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 140px;
+
+}
+
+#main-menu ul li{
+
+    
+}
