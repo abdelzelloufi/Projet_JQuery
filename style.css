@@ -75,8 +75,31 @@ header h1
 #part5 div{
     background-position: -830px 0px;
 }
+.description{
+    width: 240px;
+    height: 460px;
+    padding: 20px;
+    background: #fff;
+}
+.description h2{
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    }
 
+.description h3{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 26px;
+    background: #d70000;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
 
+    }
+    
 
 
 
