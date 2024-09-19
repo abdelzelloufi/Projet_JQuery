@@ -42,5 +42,68 @@ header h1
 
 #main-menu ul li{
 
-    
+
 }
+
+.bw{
+
+    width: 140px;
+    height: 500px;
+    cursor: pointer;
+    background: url("images/image_black.jpg.webp") no-repeat;
+    background-position: -20px 0px;
+    opacity: 0.7;
+}
+.color{
+
+    width: 140px;
+    height: 500px;
+    cursor: pointer;
+    background: url("images/image_color.jpg.webp") no-repeat;
+    background-position: -20px 0px;
+}
+
+#part2 div{
+    background-position: -220px 0px;
+}
+#part3 div{
+    background-position: -420px 0px;
+}
+#part4 div{
+    background-position: -630px 0px;
+}
+#part5 div{
+    background-position: -830px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
