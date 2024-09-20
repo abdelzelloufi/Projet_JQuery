@@ -1,161 +1,163 @@
-*{
-
-        margin: 0;
-        padding: 0;
-        font-family: Roboto Condensed;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed; /* Police par défaut pour tous les éléments */
 }
 
-ul,ol {
-
-    list-style: none;
-
-}
-body{
-    background: url("images/background_image.jpg.avif") no-repeat center center;
-    background-size: cover;
-    background-color: #1b2c1a;
-    font-family: Arial, sans-serif;
+ul, ol {
+    list-style: none; /* Supprime les puces des listes */
 }
 
-header{
-    padding: 30px 0;
+body {
+    background: url("images/background_image.jpg.avif") no-repeat center center; /* Image de fond centrée */
+    background-size: cover; /* L'image couvre tout le fond */
+    background-color: #1b2c1a; /* Couleur de fond si l'image ne se charge pas */
+    font-family: Arial, sans-serif; /* Police alternative pour le corps */
 }
 
-header h1
-{
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 2px #000;
-    font-family: Bebas Neue;
+header {
+    padding: 30px 0; /* Espacement autour de l'en-tête */
+}
+
+header h1 {
+    font-size: 40px; 
+    text-align: center; 
+    color: #fff; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 2px #000; /* Ajoute une ombre au texte */
+    font-family: Bebas Neue; 
 }
 
 /* MAIN-MENU */
 
 #main-menu ul {
-
-    width: 1400px;
-    height: 500px;
-    margin: 0 auto;
-    padding-top: 140px;
-
+    display: flex; /* Affichage en flexbox pour aligner horizontalement */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    padding-top: 60px; 
 }
 
-#main-menu ul li{
-    float: left;
+#main-menu ul li {
+    float: left; 
+    width: 216px; 
+    height: 500px; 
+    overflow: hidden; /* Cache tout dépassement d'élément */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+}
+
+.bw {
+    position: absolute; /* Positionnement absolu dans le conteneur */
+    left: 0px; /* Positionné à gauche */
     width: 216px;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-    
+    height: 500px; 
+    cursor: pointer; /* Curseur pointer pour indiquer qu'il est cliquable */
+    background: url("images/image_black.jpg.webp") no-repeat; /* Image noir et blanc */
+    background-position: -20px 0px; 
+    opacity: 0.7; 
+    margin: 5px; 
 }
 
-.bw{
+.color {
     position: absolute;
-    left: 0px;
+    left: 216px; /* Position à droite de l'image en noir et blanc */
     width: 216px;
     height: 500px;
     cursor: pointer;
-    background: url("images/image_black.jpg.webp") no-repeat;
-    background-position: -20px 0px;
-    opacity: 0.7;
-    margin: 5px;
-    
-    
-}
-.color{
-    position: absolute;
-    left: 216px;
-    width: 216px;
-    height: 500px;
-    cursor: pointer;
-    background: url("images/image_color.jpg.webp") no-repeat;
+    background: url("images/image_color.jpg.webp") no-repeat; /* Image en couleur */
     background-position: -20px 0px;
     margin: 5px;
-    
 }
 
-#part1 div{
+/* Positionnement des images pour chaque joueur */
+#part1 div {
     background-position: 0px 0px;
 }
-#part2 div{
+#part2 div {
     background-position: -216px 0px;
 }
-#part3 div{
+#part3 div {
     background-position: -432px 0px;
 }
-#part4 div{
+#part4 div {
     background-position: -648px 0px;
 }
-#part5 div{
+#part5 div {
     background-position: -864px 0px;
 }
-.description{
+
+/* Style pour la description des joueurs */
+.description {
     position: absolute;
-    left: 216px;
-    width: 240px;
-    height: 460px;
-    padding: 20px;
-    background: #fff;
-    
+    left: 216px; /* Positionné à côté des images */
+    width: 240px; 
+    height: 460px; 
+    padding: 20px; /
+    background: #fff; 
 }
-.description h2{
+
+.description h2 {
     padding-top: 20px;
-    font-size: 30px;
-    text-align: center;
-    color: #333;
-    text-transform: uppercase;
-    }
-
-.description h3{
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 24px;
-    background: rgb(1, 17, 78);
-    color: #fff;
-    text-align: center;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 5px;
-
-    }
-
-.description p{
-    padding-top: 35px;
-    font-size: 18px;
-    color: black;
-    text-align: center;
-    font-family: Lobster, sans-serif;
-
+    font-size: 30px; 
+    text-align: center; 
+    color: #333; 
+    text-transform: uppercase; 
 }
-    
 
+.description h3 {
+    margin-top: 30px;
+    padding: 10px; 
+    font-size: 24px; 
+    background: rgb(1, 17, 78); 
+    color: #fff; 
+    text-align: center; 
+    text-shadow: 1px 1px 1px #000; 
+    border-radius: 5px; 
+}
 
+.description p {
+    padding-top: 35px;
+    font-size: 18px; 
+    color: black; 
+    text-align: center; 
+    font-family: Lobster, sans-serif; 
+}
 
+/* BUTTONS-MENU */
 
+#buttons-menu {
+    float: left;
+    width: 100%;
+    padding: 60px 0 50px 0; 
+}
 
+#buttons-menu ul {
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center; 
+}
 
+.button {
+    float: left;
+    width: 150px; 
+    margin-left: 150px; 
+    padding: 10px 0; 
+    position: relative;
+    right: 50%; /* Centrer le bouton horizontalement */
+    text-shadow: 1px 1px 1px #000; 
+    font-family: Lobster, sans-serif; 
+    text-align: center; 
+    color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75); 
+    border: 2px solid rgb(1, 17, 78); 
+    font-size: 22px; 
+    cursor: pointer; 
+    opacity: 0.9; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Style pour un bouton survolé */
+.hovered {
+    background: rgb(1, 17, 78); 
+    border: 2px solid #333; 
+    font-size: 24px; 
+}

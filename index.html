@@ -2,33 +2,43 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importer des polices depuis Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 
     <title>Top 5 des meilleurs footballeurs français</title>
+    
+
     <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Charger le script JavaScript en différé -->
     <script src="script.js" defer></script>
+    
+    <!-- Importer jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
+
     <header>
         <h1>Top 5 des meilleurs footballeurs français</h1>
     </header>
+   
     <section id="main-menu">
         <ul>
+     
             <li>
+                <!-- Conteneur pour les images en noir et blanc et en couleur -->
                 <div id="part1" class="images">
-                    <div class="bw"></div>
-                    <div class="color"></div>
+                    <div class="bw"></div> <!-- Image en noir et blanc -->
+                    <div class="color"></div> <!-- Image en couleur -->
                 </div>
+                <!-- Michel Platini -->
                 <div class="description">
                     <h2>Michel<br>Platini</h2>
                     <h3>Fiche du joueur en Equipe de France</h3>
@@ -37,6 +47,8 @@
                     <p>Son dernier club est la Juventus de Turin</p>
                 </div>
             </li>
+            
+            <!-- Thierry Henry -->
             <li>
                 <div id="part2" class="images">
                     <div class="bw"></div>
@@ -50,6 +62,8 @@
                     <p>Son dernier club est New York Red Bulls</p>
                 </div>
             </li>
+            
+            <!-- Antoine Griezmann -->
             <li>
                 <div id="part3" class="images">
                     <div class="bw"></div>
@@ -63,6 +77,8 @@
                     <p>Son dernier club est l'Atletico Madrid</p>
                 </div>
             </li>
+            
+            <!-- Zinedine Zidane -->
             <li>
                 <div id="part4" class="images">
                     <div class="bw"></div>
@@ -76,6 +92,8 @@
                     <p>Son dernier club est Real Madrid</p>
                 </div>
             </li>
+            
+            <!-- Kylian Mbappé -->
             <li>
                 <div id="part5" class="images">
                     <div class="bw"></div>
@@ -89,6 +107,17 @@
                     <p>Son dernier club est Paris Saint-Germain</p>
                 </div>
             </li>
+        </ul>
+    </section>
+    
+    <!-- Section avec des boutons de navigation pour chaque joueur -->
+    <section id="buttons-menu">
+        <ul>
+            <li class="button">Michel<br>Platini</li>
+            <li class="button">Thierry<br>Henry</li>
+            <li class="button">Antoine<br>Griezmann</li>
+            <li class="button">Zinedine<br>Zidane</li>
+            <li class="button">Kylian<br>Mbappé</li>
         </ul>
     </section>
 </body>
